@@ -6,6 +6,9 @@ import Image from "next/image";
 import farmOne from "../assets/farm-1-img.jpg";
 import drone from "../assets/drone-img.jpg";
 import sensors from "../assets/sensors-img.jpg";
+import weather from "../assets/weather.jpg";
+import iot from "../assets/iot.jpg";
+import arable from "../assets/arable.webp";
 import ai from "../assets/ai.png";
 import Link from "next/link";
 
@@ -73,7 +76,7 @@ export default function Home() {
             </h1>
             <Link
               href="#"
-              className="py-2 px-4 text-sm rounded-full bg-yellow-700 text-white self-start"
+              className="py-2 px-4 text-sm rounded-full bg-yellow-600 text-white self-start"
             >
               Learn more
             </Link>
@@ -96,7 +99,7 @@ export default function Home() {
             </h1>
             <Link
               href="#"
-              className="py-2 px-4 text-sm rounded-full bg-yellow-700 text-white self-start"
+              className="py-2 px-4 text-sm rounded-full bg-yellow-600 text-white self-start"
             >
               Learn more
             </Link>
@@ -115,7 +118,7 @@ export default function Home() {
             </h1>
             <Link
               href="#"
-              className="py-2 px-4 text-sm rounded-full bg-yellow-700 text-white self-start"
+              className="py-2 px-4 text-sm rounded-full bg-yellow-600 text-white self-start"
             >
               Learn more
             </Link>
@@ -125,9 +128,63 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="py-16 flex flex-col gap-y-8 bg-[#ecebe7]">
+      <div className="py-16 px-4 flex flex-col gap-y-16 bg-[#ecebe7]">
         <h1 className="text-4xl font-bold text-black/90 text-center">
           Our Services
+        </h1>
+        <div className="flex justify-around items-center gap-x-8">
+          <div className="flex flex-col gap-y-8 justify-center items-center p-8 bg-white rounded-2xl">
+            <h1 className="text-lg font-bold text-black/80 text-center ">
+              Ai based Weather forcast and prediction
+            </h1>
+            <Image
+              src={weather}
+              alt="weather"
+              className="rounded-2xl w-[250px]"
+            />
+            <Link
+              href="#"
+              className="py-2 px-4 text-sm rounded-full bg-yellow-600 text-white self-center"
+            >
+              Book for service
+            </Link>
+          </div>
+          <div className="flex flex-col gap-y-8 justify-center items-center p-8 bg-white rounded-2xl">
+            <h1 className="text-lg font-bold text-black/80 text-center ">
+              Ai based Arable land recommandation
+            </h1>
+            <Image
+              src={arable}
+              alt="weather"
+              className="rounded-2xl w-[250px]"
+            />
+            <Link
+              href="#"
+              className="py-2 px-4 text-sm rounded-full bg-yellow-600 text-white self-center"
+            >
+              Book for service
+            </Link>
+          </div>
+          <div className="flex flex-col gap-y-8 justify-center items-center p-8 bg-white rounded-2xl">
+            <h1 className="text-lg font-bold text-black/80 text-center ">
+              IOT based personalized farming strategies
+            </h1>
+            <Image src={iot} alt="weather" className="w-[250px] rounded-2xl" />
+            <Link
+              href="#"
+              className="py-2 px-4 text-sm rounded-full bg-yellow-600 text-white self-center"
+            >
+              Book for service
+            </Link>
+          </div>
+        </div>
+        <h1 className="text-sm font-bold text-yellow-600 text-center cursor-pointer self-center">
+          Or call 5684
+        </h1>
+      </div>
+      <div className="py-16 px-4 flex flex-col gap-y-16 bg-white">
+        <h1 className="text-4xl font-bold text-black/90 text-center">
+          What you get
         </h1>
       </div>
     </main>
