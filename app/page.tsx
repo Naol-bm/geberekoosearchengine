@@ -125,6 +125,11 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="py-16 flex flex-col gap-y-8 bg-[#ecebe7]">
+        <h1 className="text-4xl font-bold text-black/90 text-center">
+          Our Services
+        </h1>
+      </div>
     </main>
   );
 }
