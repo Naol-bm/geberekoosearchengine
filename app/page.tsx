@@ -1,13 +1,19 @@
 // import Image from "next/image";
 import { Input } from "@/components/ui/input";
-import { ArrowDown } from "lucide-react";
-// import mainBg from "../assets/main-bg.jpg";
+import { Mouse, ChevronsDown } from "lucide-react";
+import Image from "next/image";
+// import Link from "next/link";
+import farmOne from "../assets/farm-1-img.jpg";
+import drone from "../assets/drone-img.jpg";
+import sensors from "../assets/sensors-img.jpg";
+import ai from "../assets/ai.png";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="">
-      <div className="main h-[100vh] bg-transparent flex flex-col justify-center items-center gap-y-8 relative">
-        <h1 className="text-6xl font-bold text-white">Dani</h1>
+      <div className="main h-[100vh] bg-transparent flex flex-col justify-center items-center gap-y-10 relative">
+        <h1 className="text-8xl font-bold text-white">Dani</h1>
 
         <Input
           type="text"
@@ -18,11 +24,107 @@ export default function Home() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
           laborum neque.
         </h1>
-        <p className="absolute bottom-5 right-1/2 translate-x-1/2 cursor-pointer w-10 h-10 flex justify-center items-center rounded-full bg-white/70">
-          <ArrowDown className="text-green-700 font-bold" />
-        </p>
+        <a
+          href={"#about"}
+          className="absolute bottom-3 gap-y-2 right-1/2 translate-x-1/2 cursor-pointer flex flex-col justify-center items-center"
+        >
+          <Mouse className="text-white" />
+          <h1 className="text-xs text-white text-center">
+            Scroll down to view all
+          </h1>
+          <ChevronsDown className="text-white" />
+        </a>
       </div>
-      <div className="h-[100vh] bg-black"></div>
+      <div className="h-[70vh] bg-slate-400 flex" id="about">
+        <Image src={farmOne} alt="farm" className="w-[50%]" />
+        <div className="w-[50%] bg-white/80 flex flex-col gap-y-4 items-center justify-center">
+          <h1 className="text-2xl font-bold text-black/90 text-center">
+            About Dani AI Climate Smart Solution
+          </h1>
+          <h1 className="text-sm max-w-[70%] font-bold text-black/90 text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            deleniti adipisci deserunt nostrum nihil impedit blanditiis odit
+            consequuntur at alias harum veritatis, praesentium, facere, officiis
+            incidunt minus aut sit. Omnis!
+          </h1>
+          <h1 className="text-sm max-w-[70%] font-bold text-black/90 text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            deleniti adipisci deserunt nostrum nihil impedit blanditiis odit
+            consequuntur at alias harum veritatis, praesentium, facere, officiis
+            incidunt minus aut sit. Omnis!
+          </h1>
+          <Link
+            href="#"
+            className="py-2 px-4 rounded-2xl bg-green-700 text-white"
+          >
+            Learn more
+          </Link>
+        </div>
+      </div>
+      <div className="p-24 flex flex-col gap-y-24 bg-[#304f30]">
+        <div className="flex gap-x-8 items-center">
+          <div className="flex flex-col gap-y-4 w-[50%]">
+            <h1 className="text-3xl font-bold text-white ">Drone utilized</h1>
+            <h1 className="text-base max-w-[70%] text-slate-200">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+              deleniti adipisci deserunt nostrum nihil impedit blanditiis odit
+              consequuntur at alias harum veritatis, praesentium, facere,
+              officiis incidunt minus aut sit. Omnis!
+            </h1>
+            <Link
+              href="#"
+              className="py-2 px-4 text-sm rounded-full bg-yellow-700 text-white self-start"
+            >
+              Learn more
+            </Link>
+          </div>
+          <div className="border-4 border-white w-[50%] rounded-2xl overflow-hidden">
+            <Image src={drone} alt="drone" />
+          </div>
+        </div>
+        <div className="flex gap-x-8 items-center">
+          <div className="border-4 border-white w-[50%] rounded-2xl overflow-hidden">
+            <Image src={ai} alt="ai" />
+          </div>
+          <div className="flex flex-col gap-y-4 w-[50%]">
+            <h1 className="text-3xl font-bold text-white ">AI utilized</h1>
+            <h1 className="text-base max-w-[70%] text-slate-200">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+              deleniti adipisci deserunt nostrum nihil impedit blanditiis odit
+              consequuntur at alias harum veritatis, praesentium, facere,
+              officiis incidunt minus aut sit. Omnis!
+            </h1>
+            <Link
+              href="#"
+              className="py-2 px-4 text-sm rounded-full bg-yellow-700 text-white self-start"
+            >
+              Learn more
+            </Link>
+          </div>
+        </div>
+        <div className="flex gap-x-8 items-center">
+          <div className="flex flex-col gap-y-4 w-[50%]">
+            <h1 className="text-3xl font-bold text-white ">
+              IOT sensor utilized
+            </h1>
+            <h1 className="text-base max-w-[70%] text-slate-200">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+              deleniti adipisci deserunt nostrum nihil impedit blanditiis odit
+              consequuntur at alias harum veritatis, praesentium, facere,
+              officiis incidunt minus aut sit. Omnis!
+            </h1>
+            <Link
+              href="#"
+              className="py-2 px-4 text-sm rounded-full bg-yellow-700 text-white self-start"
+            >
+              Learn more
+            </Link>
+          </div>
+          <div className="border-4 border-white w-[50%] rounded-2xl overflow-hidden">
+            <Image src={sensors} alt="sensors" />
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
