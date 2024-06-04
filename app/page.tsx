@@ -34,11 +34,13 @@ export default function Home() {
             <Search className="absolute right-10 top-1/2 -translate-y-1/2 cursor-pointer" />
           </Link>
         </div>
-        <h1 className="text-xl text-white text-center max-w-[50%]">
+        <div className="text-xl text-white text-center max-w-[50%]">
           Feeding the world while{" "}
-          <span className="bg-green-700/70 p-4 skiw-x-2 ">Healing</span> the
-          planet.
-        </h1>
+          <span className="bg-green-700/70 p-4 skew-x-2 rounded-[10px] font-bold">
+            Healing
+          </span>{" "}
+          the planet.
+        </div>
         <a
           href={"#about"}
           className="absolute bottom-3 gap-y-2 right-1/2 translate-x-1/2 cursor-pointer flex flex-col justify-center items-center"
