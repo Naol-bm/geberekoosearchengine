@@ -45,3 +45,7 @@ body {
 #\:1\.container {
   display: none;
 }
+.text-skiw-healing {
+  transform: skewX(12deg);
+  text-decoration: wavy;
+}

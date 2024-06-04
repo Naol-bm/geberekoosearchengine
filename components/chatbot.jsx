@@ -16,7 +16,7 @@ export default function ChatBot() {
         <BotMessageSquare className="text-white" />
       </div>
       {showbot && (
-        <div className="border-green-700 overflow-hidden border-2 w-[25em] h-[60vh] fixed right-[2.5em] bottom-[5em] rounded-xl">
+        <div className="border-green-700 bg-white overflow-hidden border-2 w-[25em] h-[60vh] fixed right-[2.5em] bottom-[5em] rounded-xl">
           <iframe
             src="https://chat-geberekoo.vercel.app/"
             className="w-full h-full border-0"

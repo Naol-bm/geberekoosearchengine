@@ -24,7 +24,7 @@ export default function Page() {
 
       <div className="flex justify-start items-center gap-2 w-full">
         <div className=" text-green-700 capitalize font-bold border-2 px-4 py-1 rounded-[5px]">
-          7 Exact Matches
+          1 Exact Matches
         </div>
         <div className=" text-yellow-700 capitalize font-bold border-2 px-4 py-1 rounded-[5px]">
           2 private
@@ -36,14 +36,35 @@ export default function Page() {
       <div className="w-full flex justify-start font-semibold items-start">
         Exact Match
       </div>
-      <SearchList showemail={true} />
+      <SearchList
+        locations={"jimma"}
+        disc={
+          "The coffee farm in Jimma covers 65 hectares of land and produced 110 quintals of cucumbers in 2024. The farm is privately owned and generated a profit of 2.4 million for the year."
+        }
+        showemail={true}
+      />
       {/* <div className="bg-gray-200/70 h-[2px] mt-4 w-full"></div> */}
       <div className="w-full flex justify-start font-semibold items-start">
-        All Results
+        You may also like
       </div>
-      <SearchList />
-      <SearchList />
-      <SearchList />
+      <SearchList
+        locations={"bahirdar"}
+        disc={
+          "The wheat farm in Amhara covers 45 hectares of land and produced 180 quintals of wheat in 2024. The farm is privately owned and generated a profit of 3.5 million for the year."
+        }
+      />
+      <SearchList
+        locations={"afar"}
+        disc={
+          "The carrot farm in Somali covers 60 hectares of land and produced 90 quintals of carrots in 2024. The farm is privately owned and generated a profit of 2 million for the year."
+        }
+      />
+      <SearchList
+        locations={"gonder"}
+        disc={
+          "The wheat farm in Amhara covers 45 hectares of land and produced 180 quintals of wheat in 2024. The farm is privately owned and generated a profit of 3.5 million for the year."
+        }
+      />
     </div>
   );
 }

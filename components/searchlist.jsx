@@ -10,12 +10,13 @@ import {
 } from "@/components/ui/accordion";
 import Link from "next/link";
 import Image from "next/image";
+import weatherpng from "../assets/weather.png";
 
-export default function SearchList({ showemail }) {
+export default function SearchList({ showemail, locations, disc }) {
   return (
     <div className="border-green-700 relative border-2 rounded-[10px] flex flex-col gap-4 w-[40em] h-auto p-4">
       <div className="flex justify-between items-center">
-        <div className="font-bold text-xl uppercase">Jimma</div>
+        <div className="font-bold text-xl uppercase">{locations}</div>
         <div className="flex gap-2 justify-center items-center">
           <div className="bg-yellow-400/40 text-yellow-700 font-bold capitalize px-2 py-1 rounded-[5px] text-sm">
             private
@@ -83,12 +84,8 @@ export default function SearchList({ showemail }) {
           </div>
         </div>
       )}
-      <div className="text-black/50">0987654321 - Addis Abeba, 20 Jan 2024</div>
-      <div>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur nemo
-        vel quasi ipsa laborum culpa, optio, ex vitae quos illum harum
-        exercitationem tempora corporis...
-      </div>
+      <div className="text-black/50">0987654321 - {locations}, 20 Jan 2024</div>
+      <div>{disc}</div>
       <div className="flex justify-between items-center gap-4">
         <div className="flex justify-start items-center gap-4">
           <div className="border-green-700/50 text-green-700 capitalize font-bold border-2 px-4 py-1 rounded-[5px]">
@@ -145,15 +142,17 @@ export default function SearchList({ showemail }) {
         </>
       )}
       {showemail && (
-        <div className="absolute  flex flex-col  left-[103%] top-0 gap-4">
+        <div className="absolute w-[20em] flex flex-col  left-[103%] top-0 gap-4">
           <Image
-            width={20}
+            width={100}
             height={100}
-            src="https://play-lh.googleusercontent.com/59qUv8wS5J4I6Z-t3sGIxd7JOHRgXg3EmVRgltjccAtnixv3QYg1LzdF6mwdw-XUSA"
+            src={weatherpng}
+            quality={100}
             alt=""
-            className="w-[20em] rounded-[10px] h-auto"
+            className="cover bg-red-200 rounded-[10px] w-full h-full"
           />
-          <div className="w-[20em] h-auto p-4 bg-green-700/20 rounded-[10px]">
+
+          <div className="w-full h-auto p-4 bg-green-700/20 rounded-[10px]">
             <h2 className="font-bold mb-2">Farming Advice:</h2>
             <ul>
               <li>

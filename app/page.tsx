@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <main className="">
       <div className="main h-[100vh] bg-transparent flex flex-col justify-center items-center gap-y-10 relative">
-        <h1 className="text-8xl font-bold text-white">Dani</h1>
+        <h1 className="text-8xl font-bold text-white">Gebere Co.</h1>
 
         <div className="w-[60%] relative">
           <Input
@@ -35,7 +35,9 @@ export default function Home() {
           </Link>
         </div>
         <h1 className="text-xl text-white text-center max-w-[50%]">
-          Feeding the world while healing the planet.
+          Feeding the world while{" "}
+          <span className="bg-green-700/70 p-4 skiw-x-2 ">Healing</span> the
+          planet.
         </h1>
         <a
           href={"#about"}
@@ -52,7 +54,7 @@ export default function Home() {
         <Image src={farmOne} alt="farm" className="w-[50%]" />
         <div className="w-[50%] bg-white/80 flex flex-col gap-y-4 items-center justify-center">
           <h1 className="text-2xl font-bold text-black/90 text-center">
-            About Dani AI Climate Smart Solution
+            About Gebere Co AI Climate Smart Solution
           </h1>
           <h1 className="text-sm max-w-[70%] font-bold text-black/90 text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
