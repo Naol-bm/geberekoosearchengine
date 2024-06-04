@@ -1,6 +1,6 @@
 // import Image from "next/image";
 import { Input } from "@/components/ui/input";
-import { Mouse, ChevronsDown } from "lucide-react";
+import { Mouse, ChevronsDown, Search } from "lucide-react";
 import Image from "next/image";
 // import Link from "next/link";
 import farmOne from "../assets/farm-1-img.jpg";
@@ -18,11 +18,16 @@ export default function Home() {
       <div className="main h-[100vh] bg-transparent flex flex-col justify-center items-center gap-y-10 relative">
         <h1 className="text-8xl font-bold text-white">Dani</h1>
 
-        <Input
-          type="text"
-          placeholder="search"
-          className="max-w-[60%] rounded-full p-6 border border-white bg-white"
-        />
+        <div className="w-[60%] relative">
+          <Input
+            type="text"
+            placeholder="search"
+            className="w-full rounded-full p-6 border border-white bg-white"
+          />
+          <Link href={"/search"}>
+            <Search className="absolute right-10 top-1/2 -translate-y-1/2 cursor-pointer" />
+          </Link>
+        </div>
         <h1 className="text-xl text-white text-center max-w-[50%]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
           laborum neque.
