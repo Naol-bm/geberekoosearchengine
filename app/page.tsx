@@ -35,8 +35,7 @@ export default function Home() {
           </Link>
         </div>
         <h1 className="text-xl text-white text-center max-w-[50%]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-          laborum neque.
+          Feeding the world while healing the planet.
         </h1>
         <a
           href={"#about"}
