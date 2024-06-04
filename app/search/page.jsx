@@ -13,7 +13,7 @@ export default function Page() {
   const [showbot, setShowBot] = useState(false);
 
   return (
-    <div className="flex justify-start items-start relative gap-4 bg-white flex-col p-4 mt-[2.5em]">
+    <div className="flex justify-start items-start gap-4 bg-white flex-col p-4 mt-[2.5em]">
       <div className="flex flex-col gap-2 w-full top-0 bg-white py-2">
         <div className="w-full flex justify-start font-bold text-lg items-start">
           Search with location
