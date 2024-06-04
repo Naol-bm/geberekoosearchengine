@@ -9,6 +9,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function SearchList({ showemail }) {
   return (
@@ -33,37 +34,47 @@ export default function SearchList({ showemail }) {
               loading="lazy"
             ></iframe>
           </div>
-          <div className="grid grid-cols-5 gap-4">
+          <div className="grid grid-cols-5 gap-2">
             <div>
-              <img
+              <Image
+                width={100}
+                height={100}
                 className="h-full max-w-full rounded-lg"
                 src="https://www.shutterstock.com/image-photo/empty-dry-cracked-swamp-reclamation-600nw-2197989839.jpg"
                 alt=""
               />
             </div>
             <div>
-              <img
+              <Image
+                width={100}
+                height={100}
                 className="h-full max-w-full rounded-lg"
                 src="https://img.indiafilings.com/learn/wp-content/uploads/2018/07/12005844/Land-Conversion-in-Telangana.jpg"
                 alt=""
               />
             </div>
             <div>
-              <img
+              <Image
+                width={100}
+                height={100}
                 className="h-full max-w-full rounded-lg"
                 src="https://civileats.com/wp-content/uploads/2013/10/shutterstock_125898755.jpg"
                 alt=""
               />
             </div>
             <div>
-              <img
+              <Image
+                width={100}
+                height={100}
                 className="h-full max-w-full rounded-lg"
                 src="https://www.shutterstock.com/image-photo/empty-dry-cracked-swamp-reclamation-600nw-2197989839.jpg"
                 alt=""
               />
             </div>
             <div>
-              <img
+              <Image
+                width={100}
+                height={100}
                 className="h-full max-w-full rounded-lg"
                 src="https://www.shutterstock.com/shutterstock/videos/3486416823/thumb/1.jpg?ip=x480"
                 alt=""
@@ -135,7 +146,9 @@ export default function SearchList({ showemail }) {
       )}
       {showemail && (
         <div className="absolute  flex flex-col  left-[103%] top-0 gap-4">
-          <img
+          <Image
+            width={20}
+            height={100}
             src="https://play-lh.googleusercontent.com/59qUv8wS5J4I6Z-t3sGIxd7JOHRgXg3EmVRgltjccAtnixv3QYg1LzdF6mwdw-XUSA"
             alt=""
             className="w-[20em] rounded-[10px] h-auto"
