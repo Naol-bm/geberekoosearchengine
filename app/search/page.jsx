@@ -1,13 +1,8 @@
-"use client";
-import { useSearchParams } from "next/navigation";
 import SearchList from "../../components/searchlist";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
 export default function Page() {
-  const searchParams = useSearchParams();
-  const search = searchParams.get("q");
-
   return (
     <div className="flex justify-start items-start gap-4 bg-white flex-col p-4 mt-[2.5em]">
       <div className="flex flex-col gap-2 w-full top-0 bg-white py-2">
@@ -19,7 +14,7 @@ export default function Page() {
             className="rounded-[5px] h-[45px]  border-gray-700 focus:border-sky-900 border-2 placeholder:text-gray-400"
             type="text"
             placeholder="search..."
-            defaultValue={search}
+            defaultValue="Jimma"
           />
           <Button className="bg-green-700 hover:bg-green-700 text-white font-semibold w-[10em] h-[45px] rounded-[5px]">
             Search
