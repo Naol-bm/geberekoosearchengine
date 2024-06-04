@@ -93,14 +93,12 @@ export default function SearchList({ showemail }) {
             dega
           </div>
         </div>
-        {!showemail && (
-          <Link
-            href={"/search/details"}
-            className="bg-green-700 text-white flex justify-center items-center gap-1 font-bold px-4 capitalize py-1 rounded-[5px]"
-          >
-            Detail <Send size={18} />
-          </Link>
-        )}
+        <Link
+          href={"/search/details"}
+          className="bg-green-700 text-white flex justify-center items-center gap-1 font-bold px-4 capitalize py-1 rounded-[5px]"
+        >
+          Details <Send size={18} />
+        </Link>
       </div>
 
       {showemail && (
@@ -138,12 +136,39 @@ export default function SearchList({ showemail }) {
       {showemail && (
         <div className="absolute  flex flex-col  left-[103%] top-0 gap-4">
           <img
-            src="https://marketplace.canva.com/EAFK3OzSDso/1/0/1600w/canva-minimal-weather-facebook-post-tJPPDoCmp5E.jpg"
+            src="https://play-lh.googleusercontent.com/59qUv8wS5J4I6Z-t3sGIxd7JOHRgXg3EmVRgltjccAtnixv3QYg1LzdF6mwdw-XUSA"
             alt=""
-            className="w-[20em] rounded-[10px] h-[12em]"
+            className="w-[20em] rounded-[10px] h-auto"
           />
-          <div className="w-[20em] h-[12em] bg-green-200 rounded-[10px]"></div>
-          <div className="w-[20em] h-[12em] bg-sky-200 rounded-[10px]"></div>
+          <div className="w-[20em] h-auto p-4 bg-green-700/20 rounded-[10px]">
+            <h2 className="font-bold mb-2">Farming Advice:</h2>
+            <ul>
+              <li>
+                <strong>Soil Health:</strong> Regularly test and amend your soil
+                to maintain its health. Use organic matter like compost to
+                improve soil structure and fertility.
+              </li>
+              <li>
+                <strong>Crop Rotation:</strong> Practice crop rotation to
+                prevent soil depletion and reduce pest and disease problems.
+              </li>
+              <li>
+                <strong>Water Management:</strong> Implement efficient
+                irrigation systems such as drip irrigation to conserve water and
+                ensure your crops get the moisture they need.
+              </li>
+              <li>
+                <strong>Pest Control:</strong> Use integrated pest management
+                (IPM) strategies, combining biological, physical, and chemical
+                controls to manage pests sustainably.
+              </li>
+              <li>
+                <strong>Diversification:</strong> Diversify your crops to spread
+                risk and increase resilience against market and climate
+                fluctuations.
+              </li>
+            </ul>
+          </div>
         </div>
       )}
     </div>

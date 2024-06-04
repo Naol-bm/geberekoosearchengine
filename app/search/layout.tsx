@@ -13,6 +13,7 @@ export default function RootLayout({
         {/* <div className="main fixed top-0 left-0 h-[10em] w-full"></div> */}
         <div className="ml-[21vw]">{children}</div>
       </div>
+
       <IndexPage />
     </div>
   );

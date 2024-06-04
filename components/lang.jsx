@@ -24,7 +24,7 @@ const IndexPage = () => {
     );
   };
   return (
-    <div id="google_translate_element" className="fixed bottom-0 right-0"></div>
+    <div id="google_translate_element" className="fixed top-0 right-0"></div>
   );
 };
 
