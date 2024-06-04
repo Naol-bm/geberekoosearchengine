@@ -12,6 +12,12 @@ import arable from "../assets/arable.webp";
 import ai from "../assets/ai.png";
 import Link from "next/link";
 
+import appCamera from "../assets/app-camera.jpg";
+import appLoad from "../assets/app-load.jpg";
+import appResult from "../assets/app-result.jpg";
+import appDesc from "../assets/app-desc-1.jpg";
+import appRecom from "../assets/app-desc-2.jpg";
+
 export default function Home() {
   return (
     <main className="">
@@ -189,8 +195,15 @@ export default function Home() {
       </div>
       <div className="py-16 px-4 flex flex-col gap-y-16 bg-white">
         <h1 className="text-4xl font-bold text-black/90 text-center">
-          What you get
+          Our App
         </h1>
+        <div className="flex w-full justify-between">
+          <Image src={appCamera} alt="camera" className="w-[24%] rounded-2xl" />
+          {/* <Image src={appLoad} alt="camera" className="w-[24%] rounded-2xl" /> */}
+          <Image src={appResult} alt="camera" className="w-[24%] rounded-2xl" />
+          <Image src={appDesc} alt="camera" className="w-[24%] rounded-2xl" />
+          <Image src={appRecom} alt="camera" className="w-[24%] rounded-2xl" />
+        </div>
       </div>
     </main>
   );
