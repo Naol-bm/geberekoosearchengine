@@ -94,7 +94,7 @@ export default function SearchList({ showemail }) {
           </div>
         </div>
         <Link
-          href={"/search/details"}
+          href={"/details"}
           className="bg-green-700 text-white flex justify-center items-center gap-1 font-bold px-4 capitalize py-1 rounded-[5px]"
         >
           Details <Send size={18} />
