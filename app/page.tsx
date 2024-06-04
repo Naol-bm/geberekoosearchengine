@@ -34,10 +34,11 @@ export default function Home() {
             <Search className="absolute right-10 top-1/2 -translate-y-1/2 cursor-pointer" />
           </Link>
         </div>
-        <div className="text-xl text-white text-center max-w-[50%]">
+        <div className="text-xl text-white flex gap-2 text-center max-w-[50%]">
           Feeding the world while{" "}
-          <span className="bg-green-700/70 p-4 skew-x-2 rounded-[10px] font-bold">
+          <span className="!decoration-wavy flex relative rounded-[10px] font-bold">
             Healing
+            <div className="absoulute left-0 top-0 animate-ping bg-green-700 rounded-full w-2 h-2"></div>
           </span>{" "}
           the planet.
         </div>
